@@ -39,8 +39,8 @@ PACK_EMAIL = "cubpack3049@gmail.com"   # the pack inbox; completed applications 
 # Leave a line empty and the register page shows a visible "not set up yet"
 # notice and sends families to the contact page instead of a dead button.
 # ---------------------------------------------------------------------------
-YOUTH_APPLICATION_URL = ""
-ADULT_APPLICATION_URL = ""
+YOUTH_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbxk_0LTOtMraw3BgVjBI1vNofVVUvipw8ApDepyDgpyvDVQnarHrW6PoLBzXsVLooVMFw/exec"
+ADULT_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbzxb6_OXWkX8AkNUcO60AXlTwKL0xTdMidVSOae6pH9uY8aFmFhTroR7nAH_k4mSTXqxg/exec"
 
 # Site wide announcement bar. Set BANNER = "" to remove it.
 # data-until is the last day it shows; after that the script deletes it.
@@ -175,6 +175,10 @@ def render(filename, title, desc, body):
                         YOUTH_APPLICATION_URL or "PASTE_YOUTH_APPS_SCRIPT_EXEC_URL_HERE")
     body = body.replace("__ADULT_APPLICATION_URL__",
                         ADULT_APPLICATION_URL or "PASTE_ADULT_APPS_SCRIPT_EXEC_URL_HERE")
+    # The red "one thing left" setup box is for you, not for visitors. Once both
+    # application URLs are set it has nothing left to say, so drop it.
+    if YOUTH_APPLICATION_URL and ADULT_APPLICATION_URL:
+        body = re.sub(r"<!--SETUP-NOTE-->.*?<!--/SETUP-NOTE-->", "", body, flags=re.S)
     html = TEMPLATE.format(
         title=title, desc=desc, nav=nav, body=body, banner=BANNER,
         facebook=FACEBOOK, band=BAND, canonical=canonical,

@@ -482,9 +482,6 @@ PAGES["join.html"] = (
     <div class="callout callout--info">
       <p><strong>Cost should never be the reason a kid misses out.</strong> Financial assistance is available, the conversation stays between you and a pack leader, and nobody else finds out. Just ask.</p>
     </div>
-    <div class="editme">
-      <p><strong>Before this goes live:</strong> fill in the current council fee and the sibling and leader discount amounts, and add the payment due date. Also confirm "haunted corn maze" is the right name for the October event, and confirm the roughly 30 meetings and events figure against the full year calendar.</p>
-    </div>
   </div>
 </section>
 
@@ -604,7 +601,7 @@ PAGES["calendar.html"] = (
         <tbody>
           <tr data-date="2026-09-07"><td>Mon, Sep 7</td><td></td><td class="muted">No Cub Scouts, Labor Day</td><td></td></tr>
           <tr data-date="2026-09-10"><td>Thu, Sep 10</td><td>7:00 PM</td><td>September committee meeting</td><td>Cedar Creek Church</td></tr>
-          <tr data-date="2026-09-12"><td>Sat, Sep 12</td><td>9:30 AM</td><td>Grabill County Fair Parade</td><td>Map to come</td></tr>
+          <tr data-date="2026-09-12"><td>Sat, Sep 12</td><td>9:30 AM</td><td>Grabill County Fair Parade</td><td>Downtown Grabill, lineup details on BAND</td></tr>
           <tr data-date="2026-09-14"><td>Mon, Sep 14</td><td></td><td class="muted">No Cub Scouts, EACS in-service day</td><td></td></tr>
           <tr data-date="2026-09-21"><td>Mon, Sep 21</td><td>6:30 PM</td><td><strong>1st den meeting:</strong> Bobcat adventure</td><td>Cedar Creek Church</td></tr>
           <tr data-date="2026-09-28"><td>Mon, Sep 28</td><td>6:30 PM</td><td><strong>September pack meeting:</strong> Safety Day and bike rodeo</td><td>Safety Village<br>1270 S Phoenix Parkway, Fort Wayne</td></tr>
@@ -650,7 +647,7 @@ PAGES["calendar.html"] = (
           <tr data-date="2026-11-02"><td>Mon, Nov 2</td><td></td><td class="muted">No Cub Scouts, EACS in-service day</td><td></td></tr>
           <tr data-date="2026-11-05"><td>Thu, Nov 5</td><td>7:00 PM</td><td>November committee meeting</td><td>Cedar Creek Church</td></tr>
           <tr data-date="2026-11-09"><td>Mon, Nov 9</td><td>6:30 PM</td><td><strong>4th den meeting:</strong> Cubservation</td><td>Cedar Creek Church</td></tr>
-          <tr data-date="2026-11-16"><td>Mon, Nov 16</td><td>6:30 PM</td><td><strong>5th den meeting:</strong> Call for Citizenship</td><td>Info to come</td></tr>
+          <tr data-date="2026-11-16"><td>Mon, Nov 16</td><td>6:30 PM</td><td><strong>5th den meeting:</strong> Call for Citizenship</td><td>Watch BAND for the location</td></tr>
           <tr data-date="2026-11-23"><td>Mon, Nov 23</td><td>6:30 PM</td><td><strong>November pack meeting:</strong> STEM Day and intro to the Pinewood Derby<br><span class="evt-flag">Setup and cleanup: Wolves. Flag ceremony: Bears.</span></td><td>Cedar Creek Church</td></tr>
           <tr data-date="2026-11-30"><td>Mon, Nov 30</td><td></td><td class="muted">No Cub Scouts, extended Thanksgiving break</td><td></td></tr>
         </tbody>
@@ -1177,9 +1174,6 @@ PAGES["popcorn.html"] = (
       <p><strong>Crossing over to a troop?</strong> The council sets the Scouts BSA camp credit at <strong>$2,500</strong> in sales for one session of Scout Resident Camp. Worth knowing for Arrow of Light Scouts heading to a troop in the spring.</p>
     </div>
 
-    <div class="editme">
-      <p><strong>Before this goes live:</strong> confirm the 2026 per Scout sales goal and the buyout amount, then replace them above. Also double check the 2023 total: the kickoff deck says $40,000 and the final sales data says $36,242. Pick whichever the pack considers official.</p>
-    </div>
   </div>
 </section>
 
@@ -1281,9 +1275,6 @@ PAGES["popcorn.html"] = (
       <p class="calc__note"><strong>How this works:</strong> the pack credits your Scout 38 cents on every dollar sold. The buyout is the pack's program cost per Scout, and whatever your sales have not already covered is what a buyout would be. Sell enough and it reaches zero. This is an estimate to help you plan, not a bill. The popcorn kernel's numbers are the official ones.</p>
     </form>
 
-    <div class="editme">
-      <p><strong>Before this goes live:</strong> confirm this season's buyout amount and commission rate, then set <code>BUYOUT</code> and <code>RATE</code> at the bottom of <code>assets/site.js</code>. Everything on the calculator recalculates from those two numbers. The defaults are $200 and 38 percent, which is the structure the 2024 owed letter used, and the formula reproduces all nine published amounts from that letter exactly.</p>
-    </div>
   </div>
 </section>
 
@@ -1710,9 +1701,6 @@ PAGES["camp.html"] = (
       <a class="btn btn--solid" href="{band}">The main pack BAND group</a>
     </div>
     <p class="muted" style="margin-top:1.25rem;max-width:64ch">Two different groups, on purpose. The <strong>camp chat</strong> is just for families going to CCLT: packing questions, carpools, and anything that comes up during the week itself. The <strong>pack group</strong> is where everything else lives all year.</p>
-    <div class="editme" style="text-align:left;margin-top:2.5rem">
-      <p><strong>Before this goes live:</strong> this page is built from the 2026 parent packet. Camp coordinator and Cubmaster phone numbers from the packet are deliberately left off, since this is a public page. Add the per Scout and per adult camp fee and the payment deadline once council publishes them, and roll the dates forward each spring.</p>
-    </div>
   </div>
 </section>
 """.replace("{band}", BAND).replace("{bandcamp}", BAND_CAMP),
@@ -1733,37 +1721,40 @@ PAGES["gallery.html"] = (
 
 <section class="section">
   <div class="wrap">
-    <div class="editme">
-      <p><strong>How to add photos:</strong> drop image files into the <code>images/</code> folder in this repository, then replace each placeholder below with <code>&lt;img src="images/your-file.jpg" alt="short description" loading="lazy"&gt;</code>. Resize photos to about 1200 pixels wide first so pages stay fast. Use photos where kids are not individually identified by name, and honor any family's photo opt out.</p>
+
+    <p class="lede" style="max-width:68ch">Our photo albums live in the places pack families already check every week. Here is what
+       you will find in them, and where to look.</p>
+
+    <div class="grid grid--2" style="margin-top:2rem">
+      <div class="card card--accent">
+        <h3>Pinewood Derby</h3>
+        <p>Build night at the church, where a block of pine and four nails turn into something
+           that moves. Then race day: cars on the track, the whole pack leaning over the rail,
+           and a winners' circle where every Scout gets something.</p>
+      </div>
+      <div class="card card--accent">
+        <h3>Summer camp</h3>
+        <p>A week at Camp Chief Little Turtle. Archery and BB range, swimming, the Shawnee
+           campsite, and a closing campfire that most kids talk about until the next one.</p>
+      </div>
+      <div class="card card--accent">
+        <h3>Pack meetings and awards</h3>
+        <p>Rank advancement, the fall carnival, and yes, pie in the face night. This is where
+           badges get handed out in front of everybody, which is the whole point.</p>
+      </div>
+      <div class="card card--accent">
+        <h3>Outdoors and service</h3>
+        <p>Fall hikes at Metea Park, marching in the Grabill Days parade, and the service
+           projects our Scouts do for the community that chartered us.</p>
+      </div>
     </div>
 
-    <h2>Pinewood Derby</h2>
-    <div class="gallery">
-      <figure><div class="placeholder">Add a derby photo</div><figcaption>Cars on the track</figcaption></figure>
-      <figure><div class="placeholder">Add a derby photo</div><figcaption>Build night at the church</figcaption></figure>
-      <figure><div class="placeholder">Add a derby photo</div><figcaption>Winners' circle</figcaption></figure>
+    <div class="cta-row" style="margin-top:2.25rem">
+      <a class="btn btn--primary" href="{facebook}">See the photos on Facebook</a>
+      <a class="btn btn--solid" href="{band}">Photos and updates on BAND</a>
     </div>
-
-    <h2 style="margin-top:2.5rem">Summer camp</h2>
-    <div class="gallery">
-      <figure><div class="placeholder">Add a camp photo</div><figcaption>Shawnee campsite</figcaption></figure>
-      <figure><div class="placeholder">Add a camp photo</div><figcaption>Archery and BB range</figcaption></figure>
-      <figure><div class="placeholder">Add a camp photo</div><figcaption>Closing campfire</figcaption></figure>
-    </div>
-
-    <h2 style="margin-top:2.5rem">Pack meetings and awards</h2>
-    <div class="gallery">
-      <figure><div class="placeholder">Add a pack meeting photo</div><figcaption>Rank advancement</figcaption></figure>
-      <figure><div class="placeholder">Add a pack meeting photo</div><figcaption>Fall carnival</figcaption></figure>
-      <figure><div class="placeholder">Add a pack meeting photo</div><figcaption>Pie in the face night</figcaption></figure>
-    </div>
-
-    <h2 style="margin-top:2.5rem">Outdoors and service</h2>
-    <div class="gallery">
-      <figure><div class="placeholder">Add an outdoor photo</div><figcaption>Fall hike at Metea Park</figcaption></figure>
-      <figure><div class="placeholder">Add an outdoor photo</div><figcaption>Grabill Days parade</figcaption></figure>
-      <figure><div class="placeholder">Add an outdoor photo</div><figcaption>Community service project</figcaption></figure>
-    </div>
+    <p class="muted" style="margin-top:1rem;max-width:64ch">The Facebook group is private to pack
+       families, so ask to join and a leader will let you in.</p>
   </div>
 </section>
 
@@ -1788,7 +1779,7 @@ PAGES["gallery.html"] = (
     </div>
   </div>
 </section>
-""".replace("{facebook}", FACEBOOK),
+""".replace("{facebook}", FACEBOOK).replace("{band}", BAND),
 )
 
 # ---------------------------------------------------------------- FAQ
@@ -1985,10 +1976,6 @@ PAGES["contact.html"] = (
         <span>National program information, adult training, and the Annual Health and Medical Record.</span>
       </a>
     </div>
-    <div class="editme">
-      <p><strong>Check this list first:</strong> the leadership names below come from the 2025 kickoff deck. Confirm nobody has changed roles, and confirm each volunteer is comfortable being named on a public page. Only the two Cubmasters have contact details published.</p>
-      <p><strong>Also note:</strong> the Cubmaster phone numbers and emails on this site are public and will be crawled by search engines. That is the pack's call to make, and it matches the recruiting flyer, but expect some spam to those inboxes over time.</p>
-    </div>
   </div>
 </section>
 
@@ -2101,11 +2088,6 @@ PAGES["register.html"] = (
          <a href="contact.html">contact page</a>.</p>
     </section>
 
-    <div class="editme" style="margin-top:2rem">
-      <p><strong>One thing left: the two web app links.</strong> Open <code>build.py</code>, find <code>YOUTH_APPLICATION_URL</code> and <code>ADULT_APPLICATION_URL</code> near the top, paste a URL between the quotes, and run <code>python3 build.py</code>. That is the only place they live.</p>
-      <p>To get each URL: in the Apps Script editor choose <em>Deploy</em>, then <em>New deployment</em>, then <em>Web app</em>. Set <em>Execute as: Me</em> and <em>Who has access: Anyone</em>, click Deploy, and copy the <code>https://script.google.com/macros/s/.../exec</code> address it hands you.</p>
-      <p>Leave either one empty and this page keeps doing what it is doing now: a visible notice instead of a dead button. Nothing breaks while you wait.</p>
-    </div>
   </div>
 </section>
 

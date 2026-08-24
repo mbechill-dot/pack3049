@@ -862,12 +862,11 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
 /* Any component that paints its own LIGHT surface must also declare its own
    ink, or it inherits the pale text of .section--pine and disappears.
    Same failure the sales table had. Keep new light-surface components here. */
-.editme { color: var(--ink); }
-.editme strong { color: var(--fire-700); }
 .card--stem { color: var(--ink); }
 .card--stem h3 { color: var(--sky-600); }
 .bigevent { color: var(--ink); }
 .contacts__card { color: var(--ink); }
+.reg { color: var(--ink); }
 
 /* Links inside the solid alert block need to read on deep orange */
 .alert a { color: #fff; text-decoration-thickness: 2px; }
