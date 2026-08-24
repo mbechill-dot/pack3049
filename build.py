@@ -39,7 +39,11 @@ PACK_EMAIL = "cubpack3049@gmail.com"   # the pack inbox; completed applications 
 # Leave a line empty and the register page shows a visible "not set up yet"
 # notice and sends families to the contact page instead of a dead button.
 # ---------------------------------------------------------------------------
-YOUTH_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbxk_0LTOtMraw3BgVjBI1vNofVVUvipw8ApDepyDgpyvDVQnarHrW6PoLBzXsVLooVMFw/exec"
+# Youth Application v2 deployment. The earlier deployment (AKfycbxk_0LTOtMraw...)
+# returned 403 to anonymous visitors even with "Anyone" set, and editing it never
+# cleared. A fresh deployment fixed it. Only ever use the URL from the deployment
+# listed under Active in Deploy > Manage deployments.
+YOUTH_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbx3dPrzCkdgTn0nF3TDx7DEaU6nGh1d0GvCXQViu1nk3dzxvdq9Dl8fgxMXBwnQRlFtrw/exec"
 ADULT_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbzxb6_OXWkX8AkNUcO60AXlTwKL0xTdMidVSOae6pH9uY8aFmFhTroR7nAH_k4mSTXqxg/exec"
 
 # Site wide announcement bar. Set BANNER = "" to remove it.
