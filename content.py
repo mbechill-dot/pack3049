@@ -64,7 +64,10 @@ PAGES["index.html"] = (
 <section class="hero">
   <div class="wrap">
     <span class="eyebrow">Leo, Indiana &middot; Pokagon District</span>
-    <h1>Muddy boots. Big ideas. <em>Every Monday.</em></h1>
+    <h1 class="hero__title">
+      <span class="hero__pack">Cub Scout Pack 3049</span>
+      <span class="hero__tag">Muddy boots. Big ideas. <em>Every Monday.</em></span>
+    </h1>
     <p class="lede">Campfires, water rockets, pinewood cars that go way too fast, and 78 kids figuring out what they are capable of. Pack 3049 has been doing this in Leo for more than 90 years. Kindergarten through 5th grade, boys and girls, everybody welcome.</p>
     <div class="btn-row">
       <a class="btn btn--primary" href="register.html">Join the pack</a>
