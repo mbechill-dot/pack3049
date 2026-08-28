@@ -48,13 +48,13 @@ ADULT_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbzxb6_OXWkX8AkN
 
 # Site wide announcement bar. Set BANNER = "" to remove it.
 # data-until is the last day it shows; after that the script deletes it.
-BANNER = """<div class="eventbar" data-until="2026-08-26">
+BANNER = """<div class="eventbar" data-until="2026-08-31">
   <div class="wrap">
-    <span class="eventbar__tag" data-event-date="2026-08-26">Wednesday night</span>
-    <p class="eventbar__text">All hands: popcorn unloading party, Wednesday August 26, 6:00 PM
-      <span>Dan Noll's garage, 4324 Winding Way Dr, Fort Wayne. 339 cases and 2,600 tubs to move.
-      Bring every Scout and grown-up you can. Many hands, 30 to 45 minutes, done.</span></p>
-    <a class="eventbar__cta" href="https://maps.google.com/?q=4324+Winding+Way+Dr,+Fort+Wayne,+IN">Get directions</a>
+    <span class="eventbar__tag" data-event-date="2026-08-31">This Monday</span>
+    <p class="eventbar__text">Popcorn Blast-Off, Monday August 31, 6:30 PM
+      <span>Cedar Creek Church. Parents talk popcorn, Scouts launch water rockets.
+      Bring an empty two-liter bottle, Class B or street clothes. Popcorn goes home that night.</span></p>
+    <a class="eventbar__cta" href="index.html#blastoff">Event details</a>
   </div>
 </div>"""
 

@@ -92,55 +92,40 @@ PAGES["index.html"] = (
   </svg>
 </section>
 
-<section class="section" data-until="2026-08-24">
+<section class="section" data-until="2026-08-31">
   <div class="wrap">
-    <div class="bigevent" data-until="2026-08-24">
+    <div class="bigevent" id="blastoff" data-until="2026-08-31">
       <div class="flyer">
         <figure class="flyer__pin">
-          <a href="images/scouting-kickoff-2026.jpg">
-            <img src="images/scouting-kickoff-2026.jpg" width="1102" height="1427" alt="Pack 3049 Scouting Kick-Off flyer. A large Cub Scouts paw print holds four messages: Make an Impact, Grow Together, Create Memories, and Explore More. You are invited to the Scouting Kick-Off. Adventure, friendship, character, fun. Monday August 24, 6:30 to 8:00 PM at Riverside Gardens Park, 14701 Schwartz Rd, Grabill, IN 46741. Games and activities, Scout Shop, food and treats, meet leaders and families, and much more. Bring the whole family. Pack 3049, Leo, Indiana, with the Lion, Tiger, Wolf, Bear, Webelos, and Arrow of Light rank badges along the bottom.">
+          <a href="images/popcorn-blastoff-2026.jpg">
+            <img src="images/popcorn-blastoff-2026.jpg" width="1103" height="1426" alt="Pack 3049 Popcorn Blast-Off flyer. A two-liter bottle rocket with red fins and a red nose cone launches through a cloud of popcorn, trailing fire. Cub Scouts Pack 3049, Popcorn Blast-Off. Monday August 31 at 6:30 PM, Cedar Creek Church. Parents talk popcorn. Kids blast off bottle rockets. Class B street clothes. Water rockets and popcorn. Bring an empty two-liter bottle, and an extra for a friend if you have one. Scouts will bring home popcorn Monday to sell.">
           </a>
           <figcaption class="flyer__cap">Tap the flyer to open it full size</figcaption>
         </figure>
         <div>
-          <span class="eyebrow">You're invited</span>
-          <h2>Scouting Kick-Off</h2>
-          <p>Kick off a great year of Scouting with Pack 3049. Every Scout and every family is invited, and so is anyone who is simply curious. Come see what a year with us looks like, meet the leaders and the other families, and sign up on the spot if it feels right.</p>
+          <span class="eyebrow" data-event-date="2026-08-31">This Monday</span>
+          <h2>Popcorn Blast-Off</h2>
+          <p>Popcorn season starts with a bang. While the grown-ups get the rundown on this year's
+             sale, the Scouts head outside to build water rockets out of two-liter bottles and launch
+             them. Build it, blast it, do it again.</p>
           <div class="bigevent__meta">
-            <div><span class="k">When</span><span class="v">Monday, August 24<small>6:30 to 8:00 PM</small></span></div>
-            <div><span class="k">Where</span><span class="v">Riverside Gardens Park<small>14701 Schwartz Rd, Grabill, IN 46741</small></span></div>
+            <div><span class="k">When</span><span class="v">Monday, August 31<small>6:30 PM</small></span></div>
+            <div><span class="k">Where</span><span class="v">Cedar Creek Church<small>12606 Leo Road, Fort Wayne, IN 46845</small></span></div>
+            <div><span class="k">Wear</span><span class="v">Class B<small>Scout T-shirt or regular street clothes</small></span></div>
           </div>
-          <h3>What's there</h3>
+          <h3>Bring an empty two-liter bottle</h3>
           <ul class="checklist checklist--yes">
-            <li>Games and activities</li>
-            <li>Scout Shop on site</li>
-            <li>Food and treats</li>
-            <li>Meet leaders and families</li>
-            <li>Sign up for the year</li>
-            <li>And much more</li>
+            <li>One empty two-liter bottle per Scout, that is their rocket</li>
+            <li>An extra for a friend if you have one</li>
+            <li>Rinse it out, labels can stay on</li>
           </ul>
-          <p><strong>Bring the whole family.</strong> Free to attend, and you can register that night.</p>
+          <p><strong>Scouts take their popcorn home that night</strong> and can start selling right away.</p>
           <div class="btn-row">
-            <a class="btn btn--primary" href="https://maps.google.com/?q=14701+Schwartz+Rd,+Grabill,+IN+46741">Get directions</a>
-            <a class="btn btn--solid" href="register.html">Register your Scout</a>
+            <a class="btn btn--primary" href="https://maps.google.com/?q=12606+Leo+Rd,+Fort+Wayne,+IN+46845">Get directions</a>
+            <a class="btn btn--solid" href="popcorn.html">How the sale works</a>
           </div>
         </div>
       </div>
-      <h3 style="margin-top:2rem">Questions? Contact us</h3>
-      <div class="contacts">
-      <div class="contacts__card">
-        <span class="contacts__role">Co-Cubmaster</span>
-        <div class="contacts__name">Nicole Howard</div>
-        <a href="tel:+12605572243">(260) 557-2243</a>
-        <a href="mailto:howardfamily411@gmail.com">howardfamily411@gmail.com</a>
-      </div>
-      <div class="contacts__card">
-        <span class="contacts__role">Co-Cubmaster</span>
-        <div class="contacts__name">Dan Noll</div>
-        <a href="tel:+12606025134">(260) 602-5134</a>
-        <a href="mailto:steelers6615@gmail.com">steelers6615@gmail.com</a>
-      </div>
-    </div>
     </div>
   </div>
 </section>
