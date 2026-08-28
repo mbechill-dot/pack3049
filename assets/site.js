@@ -58,6 +58,7 @@
   "use strict";
 
   var BUYOUT = 200;    // pack program cost per Scout, the full cash buyout
+  var GOAL   = 525;    // the pack's published per-Scout sales goal. Hit it, you owe nothing.
   var RATE   = 0.38;   // pack commission credited on a Scout's sales
   var BACK   = 0.04;   // paid to the Scout as an Amazon gift card
   var CAMP   = 1600;   // free Cub Resident Camp at CCLT
@@ -78,7 +79,6 @@
   var next    = document.getElementById("calc-next");
   var reset   = document.getElementById("calc-reset");
 
-  var GOAL = BUYOUT / RATE;   // sales that clear the obligation, about $526
 
   function money(n) {
     return "$" + Math.round(n).toLocaleString("en-US");
@@ -103,28 +103,33 @@
     if (isNaN(sales) || sales < 0) { sales = 0; }
 
     var credit = sales * RATE;
-    var owed = Math.max(0, BUYOUT - credit);
+    // The pack's goal is the published number, so the balance is measured against
+    // it and lands on exactly zero at $525. Deriving the goal from BUYOUT / RATE
+    // instead put break-even at $526.32, which left fifty cents showing at $525.
+    var owed = sales >= GOAL ? 0 : BUYOUT * (1 - sales / GOAL);
 
     elCred.textContent = money(credit);
     elBack.textContent = money(sales * BACK);
     elOwe.textContent = money(owed);
 
-    if (owed < 0.5) {   // rounds to $0, so call it cleared
+    // Clear it whenever the displayed figure is $0, so the box never reads
+    // "still owed" next to a zero. That mismatch is what showed at $525.
+    if (Math.round(owed) === 0) {
       elOweBx.className = "calc__stat calc__stat--clear";
       elOweK.textContent = "You owe nothing";
-      elOweN.textContent = "Your Scout's year is paid for. Everything from here is theirs.";
+      elOweN.textContent = "Your Scout's program cost is covered. Registration is separate. Everything from here builds camp credit.";
       bar.className = "calc__bar is-clear";
     } else {
       elOweBx.className = "calc__stat calc__stat--owe";
       elOweK.textContent = "Buyout still owed";
-      elOweN.textContent = "Or sell " + money((owed / RATE)) + " more and owe nothing.";
+      elOweN.textContent = "Or sell " + money(GOAL - sales) + " more and owe nothing.";
       bar.className = "calc__bar";
     }
 
     fill.style.width = Math.min(100, (sales / GOAL) * 100) + "%";
 
     var items = next.children;
-    milestone(items[0], GOAL, sales, "to cover your year");
+    milestone(items[0], GOAL, sales, "to cover the program cost");
     milestone(items[1], CAMP, sales, "to free camp at CCLT");
     milestone(items[2], CIRCLE, sales, "to the Winner's Circle Club");
 

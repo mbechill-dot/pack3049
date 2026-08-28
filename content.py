@@ -425,7 +425,7 @@ PAGES["join.html"] = (
       <div class="grid grid--2" style="align-items:center">
         <div>
           <div class="fact__num" style="font-size:clamp(3rem,2rem+4vw,4.6rem)">$100</div>
-          <p style="font-size:1.15rem;margin-top:.4rem"><strong>Per Scout, per year.</strong> That is registration in Pack 3049 for a full year of Scouting.</p>
+          <p style="font-size:1.15rem;margin-top:.4rem"><strong>Per Scout, per year.</strong> Registration in Pack 3049 for the membership year, August through April. Every family pays this, and popcorn does not cover it.</p>
           <ul class="checklist checklist--yes">
             <li><strong>Sibling discounts</strong> for families with more than one Scout</li>
             <li><strong>Leader discounts</strong> for registered adult volunteers</li>
@@ -465,7 +465,7 @@ PAGES["join.html"] = (
     </div>
 
     <div class="callout">
-      <p><strong>And most families do not pay the program cost out of pocket either.</strong> A Scout who reaches the pack sales goal has covered their year, and one who sells $1,600 earns free summer camp at CCLT on top of it. Families who would rather not sell can take the buyout or the calendar fundraiser instead.</p>
+      <p><strong>And most families do not pay the program cost out of pocket either.</strong> A Scout who reaches the pack sales goal has covered that $200 of programming, and one who sells $1,600 earns free summer camp at CCLT on top of it. Families who would rather not sell can take the buyout or the calendar fundraiser instead. <strong>The $100 registration is separate either way.</strong></p>
     </div>
     <div class="callout callout--info">
       <p><strong>Cost should never be the reason a kid misses out.</strong> Financial assistance is available, the conversation stays between you and a pack leader, and nobody else finds out. Just ask.</p>
@@ -797,16 +797,23 @@ PAGES["popcorn.html"] = (
       <div>
         <span class="eyebrow">Start here</span>
         <h2>Everything costs money</h2>
-        <p>Badges, belt loops, pinewood derby cars, campfire wood, pack camping gear, the Blue and Gold banquet, awards, craft supplies, and the pack's share of camp. It adds up to a real annual budget, and it works out to roughly <strong>$200 of programming per Scout, per year</strong>.</p>
+        <p>Badges, belt loops, pinewood derby cars, campfire wood, pack camping gear, the Blue and Gold banquet, awards, craft supplies, and the pack's share of camp. It adds up to a real annual budget, and it works out to <strong>$200 to $300 of programming per Scout, per year</strong>, on top of what you pay to register.</p>
         <p>Pack 3049 runs one fundraiser to cover all of it. That is deliberate. No wrapping paper in October, no cookie dough in February, no candy bars in the spring. Sell popcorn once, then spend the rest of the year actually doing Scouting.</p>
-        <p><strong>A Scout who hits the pack sales goal has paid for their year.</strong> Sell past it and you build camp credit.</p>
+        <div class="alert">
+          <h3>Popcorn does not cover registration</h3>
+          <p>Two separate things, and this trips people up every year.</p>
+          <p><strong>Registration is $100 per Scout, per year</strong>, for the membership year that runs August through April. <strong>Every family pays it</strong>, no matter how much popcorn their Scout sells. It goes to Scouting America and the council, not to the pack.</p>
+          <p><strong>Popcorn pays for the program</strong>, which runs <strong>$200 to $300 per Scout, per year</strong> in badges, derby cars, craft supplies, campfire wood, awards, camp, and the Blue and Gold banquet. That is on top of registration, it is the part a Scout can cover by selling, and it is what the buyout applies to.</p>
+        </div>
+        <p><strong>A Scout who hits the pack sales goal has covered their program cost for the year.</strong> Sell past it and you build camp credit.</p>
       </div>
       <div>
         <div class="card card--accent">
           <h3>The math, plainly</h3>
           <div class="rows">
-            <div><span class="k">Per Scout</span><span class="v">About $200 of program</span></div>
-            <div><span class="k">Sales goal</span><span class="v">$525 per Scout<small>Covers their year</small></span></div>
+            <div><span class="k">Registration</span><span class="v">$100 per Scout, per year<small>August through April. Everyone pays this, popcorn does not cover it</small></span></div>
+            <div><span class="k">Program cost</span><span class="v">$200 to $300 per Scout<small>Per year, on top of registration. What popcorn is for</small></span></div>
+            <div><span class="k">Sales goal</span><span class="v">$525 per Scout<small>Covers the $200 program cost</small></span></div>
             <div><span class="k">Free camp at</span><span class="v">$1,600<small>One session at CCLT, fully paid</small></span></div>
             <div><span class="k">Winner's Circle at</span><span class="v">$3,000<small>Pick a laptop, a TV, a 3D printer, and more</small></span></div>
             <div><span class="k">Scout keeps</span><span class="v">4 percent<small>Amazon gift card on their own sales</small></span></div>
@@ -817,6 +824,36 @@ PAGES["popcorn.html"] = (
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <span class="eyebrow">The receipts</span>
+    <h2>What the pack actually spends</h2>
+    <h3 style="margin-top:2.5rem">Where that $200 to $300 goes</h3>
+    <p>Per Scout, per year. The spread is real: a Scout who comes to everything, camps, and races a
+       derby car costs the pack more than one who comes to meetings. Both are welcome, and neither
+       is asked to pay the difference.</p>
+    <div class="table-scroll">
+      <table>
+        <caption class="visually-hidden">Approximate pack program cost per Scout per year</caption>
+        <thead><tr><th scope="col">What it goes to</th><th scope="col">Per Scout, per year</th><th scope="col">What that covers</th></tr></thead>
+        <tbody>
+          <tr><td>Rank badge and adventure loops</td><td>$25 to $40</td><td>Eight to ten awards a Scout earns across the year</td></tr>
+          <tr><td>Pinewood derby</td><td>$15 to $25</td><td>Car kit, track time, and derby awards</td></tr>
+          <tr><td>Blue and Gold banquet</td><td>$25 to $40</td><td>Food, decorations, and the neckerchief slide every Scout gets</td></tr>
+          <tr><td>Meeting and craft supplies</td><td>$35 to $50</td><td>Materials for roughly thirty meetings and activities</td></tr>
+          <tr><td>Campouts and outdoor program</td><td>$45 to $65</td><td>Site fees, food, campfire wood, and pack camping gear</td></tr>
+          <tr><td>The pack's share of camp</td><td>$30 to $45</td><td>What the pack puts toward day camp and resident camp</td></tr>
+          <tr><td>Recognition and ceremonies</td><td>$15 to $20</td><td>Patches, ceremony supplies, and crossover</td></tr>
+          <tr><td>Charter, storage, and printing</td><td>$10 to $15</td><td>The unit charter, the storage unit, and paper</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>$200 to $300</strong></td><td><strong>None of it comes out of your $100 registration. All of it comes from popcorn.</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted">Approximate, and it shifts year to year with what the pack decides to do. The
+       treasurer has the exact budget and it is open to any family who asks to see it.</p>
   </div>
 </section>
 
@@ -1202,10 +1239,10 @@ PAGES["popcorn.html"] = (
 <section class="section section--tint">
   <div class="wrap">
     <span class="eyebrow">If selling is not for you</span>
-    <h2>Three ways to cover your year</h2>
+    <h2>Three ways to cover the program cost</h2>
     <div class="grid grid--3">
       <div class="card card--accent"><h3>Sell popcorn</h3><p>Reach the pack sales goal and your Scout's year is paid for. Order forms, storefronts, and online orders all count toward it.</p></div>
-      <div class="card card--accent"><h3>Buyout</h3><p>Pay the pack's flat program amount instead and skip the sale entirely. No guilt, no follow up, no explanation needed.</p></div>
+      <div class="card card--accent"><h3>Buyout</h3><p>Pay the pack's flat program amount instead and skip the sale entirely. No guilt, no follow up, no explanation needed. The $100 registration fee is separate and still applies.</p></div>
       <div class="card card--accent"><h3>Calendar fundraiser</h3><p>An alternative for families who would rather sell something other than popcorn.</p></div>
     </div>
     <div class="callout callout--info">
@@ -1252,15 +1289,15 @@ PAGES["popcorn.html"] = (
       </div>
 
       <div class="calc__bar" id="calc-bar"><i></i></div>
-      <p class="calc__scale"><span>$0</span><span>Year paid for at $525</span></p>
+      <p class="calc__scale"><span>$0</span><span>Program covered at $525</span></p>
 
       <ul class="calc__next" id="calc-next">
-        <li><span class="m">$525</span><span class="t">to cover your year</span></li>
+        <li><span class="m">$525</span><span class="t">to cover the program cost</span></li>
         <li><span class="m">$1,600</span><span class="t">to free camp at CCLT</span></li>
         <li><span class="m">$3,000</span><span class="t">to the Winner's Circle Club</span></li>
       </ul>
 
-      <p class="calc__note"><strong>How this works:</strong> the pack credits your Scout 38 cents on every dollar sold. The buyout is the pack's program cost per Scout, and whatever your sales have not already covered is what a buyout would be. Sell enough and it reaches zero. This is an estimate to help you plan, not a bill. The popcorn kernel's numbers are the official ones.</p>
+      <p class="calc__note"><strong>How this works:</strong> the pack credits your Scout 38 cents on every dollar sold. The buyout is the pack's <em>program</em> cost per Scout, and whatever your sales have not already covered is what a buyout would be. Sell enough and it reaches zero. <strong>This does not include the $100 registration fee</strong>, which every family pays separately for the August through April membership year. This is an estimate to help you plan, not a bill. The popcorn kernel's numbers are the official ones.</p>
     </form>
 
   </div>
@@ -1821,11 +1858,20 @@ PAGES["faq.html"] = (
     <h2 style="margin-top:2.5rem">Money</h2>
 
     <details class="faq"><summary>What does it cost?</summary><div class="faq__body">
-      <p><strong>$100 per Scout, per year</strong> to register with Pack 3049, with discounts for families with more than one Scout and for registered adult leaders. That is under $3 a week for a full year of Scouting. Most of it goes straight back out to Scouting America and the council, so the pack actually runs registration at a loss. Awards, badges, activities, and the banquet are all paid for by the popcorn sale. Full breakdown on the <a href="join.html">join page</a>.</p>
+      <p><strong>$100 per Scout, per year</strong> to register with Pack 3049, for the membership year that runs August through April, with discounts for families with more than one Scout and for registered adult leaders. That is under $3 a week. Most of it goes straight back out to Scouting America and the council, so the pack actually runs registration at a loss. Awards, badges, activities, and the banquet are all paid for by the popcorn sale. <strong>Popcorn does not cover the $100 registration</strong>, every family pays that. Full breakdown on the <a href="join.html">join page</a>.</p>
     </div></details>
 
     <details class="faq"><summary>Do we have to sell popcorn?</summary><div class="faq__body">
-      <p>No. Popcorn is how most families cover their year without writing a check, and a Scout who reaches the pack goal is paid up. A Scout who sells $1,600 also earns free summer camp at CCLT, and every Scout gets 4 percent of their own sales back as an Amazon gift card. Families who would rather not sell can take the buyout or do the calendar fundraiser instead. See the <a href="popcorn.html">popcorn page</a>.</p>
+      <p>No. Popcorn is how most families cover the pack's program cost without writing a check, and a Scout who reaches the pack goal has that part covered. <strong>The $100 registration fee is separate and every family pays it regardless.</strong> A Scout who sells $1,600 also earns free summer camp at CCLT, and every Scout gets 4 percent of their own sales back as an Amazon gift card. Families who would rather not sell can take the buyout or do the calendar fundraiser instead. See the <a href="popcorn.html">popcorn page</a>.</p>
+    </div></details>
+
+    <details class="faq"><summary>How do we pay the $100?</summary><div class="faq__body">
+      <p>At a meeting, by <strong>Venmo, card, or a check made out to Pack 3049</strong>. We do not take cash,
+         only so that every payment leaves a record and nobody has to rely on memory about who paid what.</p>
+      <p>Nothing is collected online when you register. You fill out the form, you get a PDF copy for your
+         records that you do not need to do anything with, the Committee Chair files it with the council and
+         pays the national and council fees, and you bring the $100 to a Monday meeting. That is the whole
+         process.</p>
     </div></details>
 
     <details class="faq"><summary>What if we cannot afford it?</summary><div class="faq__body">
@@ -2041,7 +2087,7 @@ PAGES["register.html"] = (
   <div class="wrap">
     <span class="eyebrow">Registration</span>
     <h1>Sign your Scout up</h1>
-    <p class="lede">One form, about five minutes, and nothing due today. A leader follows up about your Scout's den and meeting nights.</p>
+    <p class="lede">One form, about five minutes, and nothing due today. Then just come to a Monday meeting and bring the $100.</p>
   </div>
 </section>
 
@@ -2060,9 +2106,9 @@ PAGES["register.html"] = (
               <span>Your Scout's date of birth and the school and grade they are in this year.</span></li>
           <li><b>Answer the questions</b>
               <span>Plain language, no form numbers. Sign at the end with your finger.</span></li>
-          <li><b>Watch your inbox</b>
-              <span>The finished application arrives as a PDF for your records, the pack gets its
-              copy at the same time, and a leader reaches out about your Scout's den and meeting nights.</span></li>
+          <li><b>Come to a Monday meeting</b>
+              <span>You will get the finished application by email as a PDF. You do not need to do
+              anything with it, it is your copy. Just show up Monday at 6:30 and bring the $100.</span></li>
         </ol>
         <div class="reg__cta">
           <a class="reg__btn" href="__YOUTH_APPLICATION_URL__">Start the application</a>
@@ -2070,10 +2116,11 @@ PAGES["register.html"] = (
           <a class="reg__alt" id="adult" href="__ADULT_APPLICATION_URL__">Volunteering too? Adult application</a>
         </div>
       </div>
-      <p class="reg__fine">No payment is collected online. A leader follows up about the national
-         registration fee, the council fee, and pack dues, and about the ways we help families who
-         need it. Questions before you sign up? Call or email a Cubmaster on the
-         <a href="contact.html">contact page</a>.</p>
+      <p class="reg__fine">No payment is collected online. You pay the pack $100 for the year at a
+         meeting, by Venmo, card, or a check made out to <strong>Pack 3049</strong>. We do not take
+         cash, only so every payment leaves a record. The pack handles the national and council fees
+         from there. Cost should never keep a kid out, so if $100 is hard right now, say so to a
+         Cubmaster on the <a href="contact.html">contact page</a> and it stays between you and them.</p>
     </section>
 
   </div>
@@ -2086,11 +2133,13 @@ PAGES["register.html"] = (
     <div class="grid grid--3">
       <div class="card card--accent">
         <h3>You get an email</h3>
-        <p>The completed application arrives as a PDF for your records, and the same file lands in the pack inbox at <a href="mailto:cubpack3049@gmail.com">cubpack3049@gmail.com</a>. Nothing to print, nothing to hand in.</p>
+        <p>The completed application arrives as a PDF. <strong>You do not need to do anything with it.</strong>
+        It is your copy, for your records. Nothing to print, nothing to sign, nothing to hand in.</p>
       </div>
       <div class="card card--accent">
-        <h3>A leader reaches out</h3>
-        <p>One of the Cubmasters will contact you about your Scout's den, which Mondays they meet, and what to bring the first night. Which is nothing.</p>
+        <h3>We file it for you</h3>
+        <p>The same PDF goes to the Committee Chair, who submits it to the Anthony Wayne Area Council
+        and pays the national and council fees on your Scout's behalf. That part is handled.</p>
       </div>
       <div class="card card--accent">
         <h3>Adults register separately</h3>
@@ -2098,11 +2147,16 @@ PAGES["register.html"] = (
         <p class="muted">We do not ask for your Social Security number online. Council needs one for the background check, so a leader asks you for it in person when the form is submitted.</p>
       </div>
       <div class="card card--accent">
-        <h3>Then you just show up</h3>
-        <p>Mondays at 6:30 PM at Cedar Creek Church. Come in regular clothes. We will sort out the uniform once your Scout has decided they like it here.</p>
+        <h3>You pay the pack $100</h3>
+        <p>At a meeting, by <strong>Venmo, card, or a check made out to Pack 3049</strong>. No cash, so
+        that every payment is tracked. That is the only money you owe, and it covers the membership year
+        from August through April.</p>
       </div>
     </div>
     <div class="callout callout--info">
+      <p style="margin-top:1.75rem"><strong>Then you just show up.</strong> Mondays at 6:30 PM at Cedar
+         Creek Church. Come in regular clothes. We will sort out the uniform once your Scout has decided
+         they like it here, and a leader will point you to the right den on your first night.</p>
       <p><strong>Not ready to sign up yet?</strong> That is completely fine. Read <a href="join.html">what it costs and what a year looks like</a>, check the <a href="calendar.html">calendar</a>, or just come to a Monday meeting and watch. Nobody will pressure you.</p>
     </div>
   </div>
