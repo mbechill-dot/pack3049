@@ -1212,3 +1212,18 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
   font-size: .88rem; color: var(--ink-soft);
 }
 .den__lead strong { color: var(--fire-ink); }
+
+
+/* ---------- Role definitions ----------
+   Light cards, so they declare their own ink like every other light surface. */
+.role-defs {
+  display: grid; gap: .75rem; margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+.role-def {
+  background: var(--white); color: var(--ink);
+  border: 1px solid var(--line); border-left: 4px solid var(--sun-400);
+  border-radius: var(--radius-sm); padding: .85rem 1rem .95rem;
+}
+.role-def h4 { margin: 0 0 .3rem; font-size: 1rem; color: var(--pine-900); }
+.role-def p { margin: 0; font-size: .92rem; line-height: 1.5; color: var(--ink-soft); }
