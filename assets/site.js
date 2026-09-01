@@ -57,7 +57,8 @@
 (function () {
   "use strict";
 
-  var BUYOUT = 200;    // pack program cost per Scout, the full cash buyout
+  var BUYOUT = 300;    // the cash buyout, per the Aug 31 2026 kickoff minutes.
+                       // Was 200 here until the minutes confirmed 300.
   var GOAL   = 525;    // the pack's published per-Scout sales goal. Hit it, you owe nothing.
   var RATE   = 0.38;   // pack commission credited on a Scout's sales
   var BACK   = 0.04;   // paid to the Scout as an Amazon gift card
