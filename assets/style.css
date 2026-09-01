@@ -1233,14 +1233,14 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
 /* ---------- Document downloads ----------
    Sits on .section--pine, so it paints its own light surface and its own ink. */
 .docs {
-  display: grid; gap: .85rem; margin-top: 1.6rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid; gap: .6rem; margin-top: 0;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 .doc {
-  display: flex; gap: .95rem; align-items: flex-start;
+  display: flex; gap: .75rem; align-items: center;
   background: var(--paper); color: var(--ink);
-  border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 1.05rem 1.15rem; text-decoration: none;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  padding: .7rem .9rem; text-decoration: none;
   box-shadow: 4px 4px 0 rgba(11, 28, 20, .4);
   transition: transform .14s ease, box-shadow .14s ease, background .14s ease;
 }
@@ -1249,13 +1249,13 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
   transform: translate(-2px, -2px); box-shadow: 6px 6px 0 rgba(11, 28, 20, .5);
 }
 .doc__type {
-  width: 42px; height: 42px; flex: none; border-radius: 50%;
+  width: 34px; height: 34px; flex: none; border-radius: 50%;
   background: var(--fire-500); color: var(--pine-950);
   display: grid; place-items: center;
 }
-.doc__type svg { width: 21px; height: 21px; }
-.doc__text { display: flex; flex-direction: column; gap: .25rem; min-width: 0; }
-.doc__text b { font-family: var(--display); font-weight: 600; font-size: 1.1rem; color: var(--pine-900); }
+.doc__type svg { width: 17px; height: 17px; }
+.doc__text { display: flex; flex-direction: column; gap: .05rem; min-width: 0; }
+.doc__text b { font-family: var(--display); font-weight: 600; font-size: .98rem; color: var(--pine-900); }
 .doc__text small { font-size: .88rem; line-height: 1.45; color: var(--ink-soft); }
 .doc__text em {
   font-family: var(--mono); font-style: normal; font-size: .68rem;

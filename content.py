@@ -828,13 +828,73 @@ PAGES["popcorn.html"] = (
   </div>
 </section>
 
-<section class="section section--pine">
+<section class="section section--tint" id="fair">
   <div class="wrap">
-    <span class="eyebrow">From the kickoff</span>
-    <h2>The meeting, in writing</h2>
-    <p style="max-width:66ch">Both of these are from the Fall and Popcorn Kickoff on Monday, August 31 at
-       Cedar Creek Church. If you could not make it, or you were there and want to check a number, everything
-       said that night is here.</p>
+    <span class="eyebrow">The easiest place to start</span>
+    <h2>Grabill Country Fair</h2>
+    <div class="grid grid--2" style="align-items:start;margin-top:1.25rem">
+      <div>
+        <div class="bigevent__meta">
+          <div><span class="k">When</span><span class="v">Thursday, Friday, Saturday<small>September 10, 11 and 12. All day, all three days.</small></span></div>
+          <div><span class="k">Where</span><span class="v">The main drag<small>Directly in front of Grabill Vet Clinic</small></span></div>
+          <div><span class="k">Wear</span><span class="v">Class A<small>The full uniform. This one is a uniform event.</small></span></div>
+        </div>
+        <div class="btn-row" style="margin-top:1.25rem">
+          <a class="btn btn--primary" href="https://maps.google.com/?q=Grabill+Veterinary+Clinic,+Grabill,+IN">Get directions</a>
+        </div>
+      </div>
+      <div>
+        <p><strong>No sign-up. No shift. Nothing to bring.</strong> The pack runs a booth all three days
+           and keeps it stocked. Show up in Class A with a parent, take a turn at the table, and leave
+           whenever you need to.</p>
+        <h3>Why this one matters</h3>
+        <p>If your Scout is nervous about selling, this is the place to start. Everyone walking past is
+           already in a good mood, the booth does half the work, and there is always an experienced family
+           standing there to show your Scout how it goes.</p>
+        <p>Families have sold around <strong>$2,000 at the fair in a single weekend</strong>. It is the
+           best three days of the season.</p>
+        <p class="muted">Bring a chair if you plan to stay a while. Log every sale in Square so your Scout
+           gets the credit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="square">
+  <div class="wrap">
+    <span class="eyebrow">Do not skip this</span>
+    <h2>Every sale goes in Square</h2>
+    <div class="grid grid--2" style="align-items:start;margin-top:1.25rem">
+      <div>
+        <p style="font-size:1.12rem"><strong>Every registered Scout gets their own Square login</strong>,
+           emailed to the address on the registration form. Watch for it.</p>
+        <p><strong>Every sale and every donation goes in Square. Cash included.</strong> Not just card
+           payments. If it is not in Square, your Scout does not get credit for it and the pack cannot
+           reconcile the season.</p>
+        <p>That credit is what drives the 4 percent gift card, free camp at $1,600, and the Winner's
+           Circle at $3,000. A cash sale logged on a napkin is a sale your Scout does not get paid for.</p>
+      </div>
+      <div>
+        <div class="card card--accent">
+          <h3>The short version</h3>
+          <ul class="checklist checklist--yes">
+            <li>Watch your email for your Scout's Square login</li>
+            <li>Log <strong>every</strong> sale, cash or card</li>
+            <li>Log <strong>every</strong> donation too</li>
+            <li>Do it at the table, not from memory later</li>
+          </ul>
+          <p class="muted" style="margin-top:.75rem">Never got your login, or cannot find the email?
+             Tell a Cubmaster and it gets resent.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--pine" style="padding:2.5rem 0">
+  <div class="wrap">
+    <h2 style="font-size:1.45rem;margin-bottom:.35rem">From the August 31 kickoff</h2>
+    <p class="muted" style="margin-bottom:1.1rem">Everything said that night, if you missed it or want to check a number.</p>
     <div class="docs">
       <a class="doc" href="docs/pack3049-kickoff-minutes-2026-08-31.pdf">
         <span class="doc__type" aria-hidden="true">
@@ -842,29 +902,16 @@ PAGES["popcorn.html"] = (
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/>
             <path d="M8 13h8M8 17h5"/></svg>
         </span>
-        <span class="doc__text">
-          <b>Kickoff meeting minutes</b>
-          <small>Everything covered on August 31, written out. Costs, deadlines, how to sell, rewards,
-                 and the action items for families. 2 pages.</small>
-          <em>PDF &middot; 2 pages</em>
-        </span>
+        <span class="doc__text"><b>Meeting minutes</b><em>PDF &middot; 2 pages</em></span>
       </a>
       <a class="doc" href="docs/pack3049-popcorn-kickoff-2026.pdf">
         <span class="doc__type" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </span>
-        <span class="doc__text">
-          <b>Popcorn kickoff slide deck</b>
-          <small>The full presentation: the goal, the starter pack, where and how to sell, the product mix,
-                 the rewards ladder, and the Scout script. 43 slides.</small>
-          <em>PDF &middot; 43 slides &middot; 4.5 MB</em>
-        </span>
+        <span class="doc__text"><b>Popcorn slide deck</b><em>PDF &middot; 43 slides</em></span>
       </a>
     </div>
-    <p class="muted" style="margin-top:1.25rem">Numbers on this page come from these two documents. If
-       anything here and anything there disagree, the documents are right, and tell a Cubmaster so this
-       page gets fixed.</p>
   </div>
 </section>
 
