@@ -1261,3 +1261,15 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
   font-family: var(--mono); font-style: normal; font-size: .68rem;
   letter-spacing: .1em; text-transform: uppercase; color: var(--fire-ink); margin-top: .15rem;
 }
+
+
+/* ---------- Advertising kit preview ---------- */
+.adkit { margin: 0 0 1rem; }
+.adkit img {
+  width: 100%; height: auto; border-radius: var(--radius-sm);
+  border: 1px solid var(--line); background: #fff;
+}
+.adkit figcaption {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--ink-soft); margin-top: .45rem;
+}
