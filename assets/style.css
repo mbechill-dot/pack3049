@@ -1273,3 +1273,43 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
   font-family: var(--mono); font-size: .66rem; letter-spacing: .12em;
   text-transform: uppercase; color: var(--ink-soft); margin-top: .45rem;
 }
+
+
+/* ---------- Nutrition, inside each product tile ----------
+   Collapsed by default so the grid still scans as a price list. */
+.nut { margin-top: auto; border-top: 2px dotted var(--line); padding-top: .6rem; }
+.nut > summary {
+  cursor: pointer; list-style: none;
+  font-family: var(--mono); font-weight: 700; font-size: .68rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--fire-ink);
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  padding: .2rem 0;
+}
+.nut > summary::-webkit-details-marker { display: none; }
+.nut > summary::after {
+  content: "+"; font-family: var(--display); font-size: 1.15rem; line-height: 1;
+  color: var(--fire-ink); flex: none;
+}
+.nut[open] > summary::after { content: "\2013"; }
+.nut > summary:hover, .nut > summary:focus-visible { color: var(--pine-900); }
+.nut__body { padding-top: .5rem; }
+.nut__serve {
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .03em;
+  color: var(--pine-900); font-weight: 700; margin: 0 0 .5rem;
+}
+.nut__grid { margin: 0 0 .7rem; display: grid; gap: 0; }
+.nut__grid > div {
+  display: flex; justify-content: space-between; gap: .75rem;
+  padding: .22rem 0; border-bottom: 1px solid var(--line-soft);
+  font-size: .84rem;
+}
+.nut__grid > div:last-child { border-bottom: none; }
+.nut__grid dt { margin: 0; color: var(--ink-soft); }
+.nut__grid dd { margin: 0; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--ink); }
+.nut__ing { font-size: .78rem; line-height: 1.5; color: var(--ink-soft); margin: 0 0 .6rem; }
+.nut__contains {
+  font-size: .8rem; line-height: 1.5; margin: 0; color: var(--ink);
+  background: var(--fire-050); border-left: 3px solid var(--fire-500);
+  padding: .5rem .7rem; border-radius: var(--radius-sm);
+}
+.nut__contains strong { color: var(--fire-ink); }
