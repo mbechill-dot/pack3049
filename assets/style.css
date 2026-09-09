@@ -1313,3 +1313,60 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
   padding: .5rem .7rem; border-radius: var(--radius-sm);
 }
 .nut__contains strong { color: var(--fire-ink); }
+
+
+/* ---------- Grabill Days additions, September 2026 ---------- */
+
+/* Host and partner thank you block. Paints its own light surface, so it
+   declares its own color. Teal text uses a darker token because --sky-600
+   is only 4.38:1 on the --sky-050 background. */
+:root { --host-ink: #00707a; }
+.host {
+  margin: 2.5rem 0 0;
+  background: var(--sky-050);
+  color: var(--ink);
+  border: 2px solid var(--sky-200);
+  border-left: 8px solid var(--sky-500);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.7rem;
+}
+.host .eyebrow { color: var(--host-ink); }
+.host .eyebrow::before { background: var(--sky-500); }
+.host h3 { margin: .35rem 0 .7rem; color: var(--host-ink); }
+.host p { margin-bottom: .8rem; }
+.host p:last-of-type { margin-bottom: 0; }
+.host strong { color: var(--ink); }
+.host em { font-style: italic; }
+.host__meta {
+  display: grid; gap: 1rem; margin-top: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+.host__meta div { border-left: 4px solid var(--sky-500); padding-left: .9rem; }
+.host__meta .k {
+  display: block; font-family: var(--mono); font-weight: 700; font-size: .68rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--host-ink);
+  margin-bottom: .25rem;
+}
+.host__meta .v { font-family: var(--display); font-weight: 600; font-size: 1.05rem; color: var(--ink); line-height: 1.3; }
+.host__meta .v a { color: var(--ink); }
+.host__meta .v small { display: block; font-family: var(--body); font-weight: 400; font-size: .86rem; color: var(--ink-soft); margin-top: .2rem; }
+.section--tint .host { background: var(--white); }
+
+/* A .bigevent__meta row inside an .alert sits on the fire surface, where its
+   own dark ink is invisible. Restate the ink. */
+.alert .bigevent__meta { margin: 0; }
+.alert .bigevent__meta div { border-left-color: var(--sun-200); }
+.alert .bigevent__meta .k { color: var(--sun-200); }
+.alert .bigevent__meta .v { color: #fff; }
+.alert .bigevent__meta .v small { color: rgba(255,255,255,.82); }
+
+/* Staging map */
+.stagemap { margin: 1rem 0 0; max-width: 520px; }
+.stagemap img {
+  width: 100%; height: auto; border-radius: var(--radius-sm);
+  border: 1px solid var(--line); background: #fff;
+}
+.stagemap figcaption {
+  font-size: .85rem; line-height: 1.5; color: var(--ink-soft); margin-top: .5rem;
+}
+.section--pine .stagemap figcaption { color: rgba(232,242,234,.72); }
