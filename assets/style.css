@@ -1398,3 +1398,11 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
   font-family: var(--mono); font-size: .66rem; letter-spacing: .14em;
   text-transform: uppercase; color: var(--ink-soft); margin-top: .6rem; text-align: center;
 }
+.essentials { margin: .6rem 0 0; padding-left: 1.3rem; }
+.essentials li { margin-bottom: .25rem; }
+.essentials li::marker { font-family: var(--mono); font-weight: 700; color: var(--fire-ink); font-size: .85em; }
+/* Fire variant of the host card, for a pack action item rather than a partner. */
+.host--fire { background: var(--fire-050); border-color: var(--fire-200); border-left-color: var(--fire-500); }
+.host--fire .eyebrow, .host--fire h3 { color: var(--fire-ink); }
+.host--fire .eyebrow::before { background: var(--fire-500); }
+.section--tint .host--fire { background: var(--fire-050); }

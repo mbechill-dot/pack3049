@@ -48,6 +48,9 @@ ADULT_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbzxb6_OXWkX8AkN
 
 # Site wide announcement bar. Set BANNER = "" to remove it.
 # data-until is the last day it shows; after that the script deletes it.
+# Two slots, each with a queue. data-from and data-until give an element a
+# window, so the next announcement takes over on its own and there are never
+# more than two bars on screen at once.
 BANNER = """<div class="eventbar" data-until="2026-09-27">
   <div class="wrap">
     <span class="eventbar__tag">Sept 25 to 27</span>
@@ -66,11 +69,21 @@ BANNER = """<div class="eventbar" data-until="2026-09-27">
     <a class="eventbar__cta" href="index.html#fallfest">What to bring</a>
   </div>
 </div>
-<div class="eventbar eventbar--quiet" data-until="2026-10-11">
+<div class="eventbar eventbar--quiet" data-until="2026-09-28">
+  <div class="wrap">
+    <span class="eventbar__tag">This Monday</span>
+    <p class="eventbar__text">Safety Day is at the church, not Safety Village
+      <span>Monday Sept 28, 6:30 to 7:30 PM at Cedar Creek Church. Bring a bike and a helmet, and bring
+      the finished Bobcat sheet. The fall hike on Oct 5 starts half an hour early, at 6:00.</span></p>
+    <a class="eventbar__cta" href="index.html#mondays">What changed</a>
+  </div>
+</div>
+<div class="eventbar eventbar--quiet" data-from="2026-09-29" data-until="2026-10-11">
   <div class="wrap">
     <span class="eventbar__tag">Popcorn</span>
-    <p class="eventbar__text">Jalapeno Cheese and Mountain Munch are sold out
-      <span>No restock for several weeks. Everything else is in stock, resupply is weekly at the church.</span></p>
+    <p class="eventbar__text">Mountain Munch is back Monday, Jalapeno Cheese is still out
+      <span>A Mountain Munch resupply arrives this week and will be at the Sept 28 meeting. Jalapeno Cheese
+      has no restock date. Everything else is in stock, resupply is weekly at the church.</span></p>
     <a class="eventbar__cta" href="popcorn.html">How the sale works</a>
   </div>
 </div>"""
