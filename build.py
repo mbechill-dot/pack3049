@@ -48,14 +48,30 @@ ADULT_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbzxb6_OXWkX8AkN
 
 # Site wide announcement bar. Set BANNER = "" to remove it.
 # data-until is the last day it shows; after that the script deletes it.
-BANNER = """<div class="eventbar" data-until="2026-09-02">
+BANNER = """<div class="eventbar" data-until="2026-09-27">
   <div class="wrap">
-    <span class="eventbar__tag" data-event-date="2026-09-02">Wednesday night</span>
-    <p class="eventbar__text">Starter pack checkout party, Wednesday September 2, 6:00 to 8:30 PM
-      <span>Dan Noll's house, 4324 Winding Way Dr, Fort Wayne. <strong>Pick up your Scout's starter
-      pack any time in that window</strong>, and stay to help build them if you can. 339 cases to break
-      down into 78 packs, so every extra pair of hands counts.</span></p>
-    <a class="eventbar__cta" href="https://maps.google.com/?q=4324+Winding+Way+Dr,+Fort+Wayne,+IN">Get directions</a>
+    <span class="eventbar__tag">Sept 25 to 27</span>
+    <p class="eventbar__text">Power Up with Scouting, this weekend
+      <span>The council's recruiting weekend at Power Up Action Park, Fort Wayne. $10 a person, and the
+      first 50 kids who join each day get a free six month park membership.</span></p>
+    <a class="eventbar__cta" href="https://scoutingevent.com/?OrgKey=BSA157&amp;calendarID=706339">Details and times</a>
+  </div>
+</div>
+<div class="eventbar" data-from="2026-09-28" data-until="2026-10-25">
+  <div class="wrap">
+    <span class="eventbar__tag">Oct 24 and 25</span>
+    <p class="eventbar__text">Fall Festival and free Cub camping at CCLT
+      <span>Games, archery, bounce houses and a silent auction on Saturday, then camp the night for free.
+      Free for every AWAC pack, ours included.</span></p>
+    <a class="eventbar__cta" href="index.html#fallfest">What to bring</a>
+  </div>
+</div>
+<div class="eventbar eventbar--quiet" data-until="2026-10-11">
+  <div class="wrap">
+    <span class="eventbar__tag">Popcorn</span>
+    <p class="eventbar__text">Jalapeno Cheese and Mountain Munch are sold out
+      <span>No restock for several weeks. Everything else is in stock, resupply is weekly at the church.</span></p>
+    <a class="eventbar__cta" href="popcorn.html">How the sale works</a>
   </div>
 </div>"""
 

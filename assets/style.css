@@ -1370,3 +1370,31 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
   font-size: .85rem; line-height: 1.5; color: var(--ink-soft); margin-top: .5rem;
 }
 .section--pine .stagemap figcaption { color: rgba(232,242,234,.72); }
+
+/* A second, ongoing notice sitting under the headline bar. Same structure, much
+   calmer, so two stacked bars read as a hierarchy instead of competing. It paints
+   its own light surface, so it declares its own ink. */
+.eventbar--quiet {
+  background: var(--paper);
+  background-image: none;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.eventbar--quiet .wrap { padding: .6rem 0; gap: .6rem 1.1rem; }
+.eventbar--quiet .eventbar__tag { background: var(--pine-800); color: #fff; }
+.eventbar--quiet .eventbar__text { font-size: .97rem; }
+.eventbar--quiet .eventbar__text span { font-size: .9rem; color: var(--ink-soft); font-weight: 400; }
+.eventbar--quiet .eventbar__cta { font-size: .88rem; padding: .42rem 1rem; }
+
+/* A landscape flyer, as opposed to the portrait ones .flyer is built for. It
+   runs the full width of the block rather than sitting in a narrow column. */
+.widebill { margin: 1.5rem 0 0; }
+.widebill img {
+  display: block; width: 100%; height: auto;
+  border-radius: var(--radius); border: 2px solid var(--line);
+  background: #fff;
+}
+.widebill figcaption {
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--ink-soft); margin-top: .6rem; text-align: center;
+}

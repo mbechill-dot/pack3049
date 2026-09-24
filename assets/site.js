@@ -34,12 +34,22 @@
 /* Event banner: hide itself once the event has passed. */
 (function () {
   "use strict";
-  var bars = document.querySelectorAll("[data-until]");
   var now = new Date();
   now.setHours(0, 0, 0, 0);
+
+  var bars = document.querySelectorAll("[data-until]");
   for (var i = 0; i < bars.length; i++) {
     var d = new Date(bars[i].getAttribute("data-until") + "T23:59:59");
     if (!isNaN(d) && d < now) { bars[i].remove(); }
+  }
+
+  /* data-from is the mirror of data-until: the element stays out of the page
+     until that date arrives. Put both on one element to give it a window, which
+     is how a queued announcement takes over the banner on its own. */
+  var later = document.querySelectorAll("[data-from]");
+  for (var m = 0; m < later.length; m++) {
+    var f = new Date(later[m].getAttribute("data-from") + "T00:00:00");
+    if (!isNaN(f) && f > now) { later[m].remove(); }
   }
 })();
 
