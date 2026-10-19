@@ -1406,3 +1406,9 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
 .host--fire .eyebrow, .host--fire h3 { color: var(--fire-ink); }
 .host--fire .eyebrow::before { background: var(--fire-500); }
 .section--tint .host--fire { background: var(--fire-050); }
+
+/* Compact table for rotation grids and small lookups inside an event block. */
+.rota { font-size: .9rem; }
+.rota th, .rota td { padding: .55rem .7rem; }
+.rota thead th { font-size: .82rem; }
+.rota td:first-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
