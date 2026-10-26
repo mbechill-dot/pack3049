@@ -54,16 +54,10 @@ ADULT_APPLICATION_URL = "https://script.google.com/macros/s/AKfycbzxb6_OXWkX8AkN
 # Two slots, each with a queue. data-from and data-until give an element a
 # window, so the next announcement takes over on its own and there are never
 # more than two bars on screen at once.
-BANNER = """<div class="eventbar" data-until="2026-10-19">
-  <div class="wrap">
-    <span class="eventbar__tag">Tonight</span>
-    <p class="eventbar__text">Fitness Fun Day, 6:30 to 7:40 PM at Cedar Creek Church
-      <span>Four stations, ten minutes each: nutrition, hygiene, fitness and healthy minds. Every den rotates
-      through all four. Opening ceremony at 6:30, done by 7:40.</span></p>
-    <a class="eventbar__cta" href="index.html#fitness">Tonight's schedule</a>
-  </div>
-</div>
-<div class="eventbar" data-from="2026-10-20" data-until="2026-10-25">
+# Two slots, each with a queue. data-from and data-until give an element a
+# window, so the next announcement takes over on its own and there are never
+# more than two bars on screen at once.
+BANNER = """<div class="eventbar" data-until="2026-10-25">
   <div class="wrap">
     <span class="eventbar__tag">Oct 24 and 25</span>
     <p class="eventbar__text">Fall Festival and free Cub camping at CCLT
@@ -72,21 +66,30 @@ BANNER = """<div class="eventbar" data-until="2026-10-19">
     <a class="eventbar__cta" href="index.html#fallfest">What to bring</a>
   </div>
 </div>
-<div class="eventbar eventbar--quiet" data-until="2026-10-19">
+<div class="eventbar" data-from="2026-10-26" data-until="2026-10-26">
   <div class="wrap">
-    <span class="eventbar__tag">Popcorn</span>
-    <p class="eventbar__text">Bring unsold popcorn tonight. It is the last night it can go back to council.
-      <span>$42,000 sold so far. If your Scout is still selling, keep what is moving and swap out what is not.
-      If your Scout is done, tonight is the window. After tonight the pack pays for anything returned.</span></p>
-    <a class="eventbar__cta" href="index.html#popcorn-update">Read the update</a>
+    <span class="eventbar__tag">Tonight</span>
+    <p class="eventbar__text">Family Fall Event at Cedar Creek Produce, 5:30 to 7:30 PM
+      <span>Not the church, and an hour earlier than usual. 11709 Clay Street in Leo. Come any time in the
+      window, bring the whole family, and bring money for dinner.</span></p>
+    <a class="eventbar__cta" href="index.html#fallevent">Menu and details</a>
   </div>
 </div>
-<div class="eventbar eventbar--quiet" data-from="2026-10-20" data-until="2026-11-23">
+<div class="eventbar eventbar--quiet" data-until="2026-10-25">
+  <div class="wrap">
+    <span class="eventbar__tag">Next Monday</span>
+    <p class="eventbar__text">Family Fall Event at Cedar Creek Produce, Oct 26, 5:30 to 7:30 PM
+      <span>This replaces the pack meeting. Different time, different place, and the whole family is invited.
+      Dinner and concessions on site, so bring money.</span></p>
+    <a class="eventbar__cta" href="index.html#fallevent">Menu and details</a>
+  </div>
+</div>
+<div class="eventbar eventbar--quiet" data-from="2026-10-27" data-until="2026-11-23">
   <div class="wrap">
     <span class="eventbar__tag">Popcorn</span>
     <p class="eventbar__text">Every Monday is a swap, not a pickup. The sale runs through November 23.
       <span>Bring back what is not selling, take what you need for the week. Nobody needs a month of
-      inventory in the garage. $42,000 sold so far and five weekends left.</span></p>
+      inventory in the garage. $42,000 sold so far and four weekends left.</span></p>
     <a class="eventbar__cta" href="index.html#popcorn-update">Read the update</a>
   </div>
 </div>"""
