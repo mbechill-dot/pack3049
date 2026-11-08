@@ -1412,3 +1412,31 @@ details.faq .faq__body p:last-child { margin-bottom: 0; }
 .rota th, .rota td { padding: .55rem .7rem; }
 .rota thead th { font-size: .82rem; }
 .rota td:first-child { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* Optional council events. These are clearly marked as extras put on by the
+   Anthony Wayne Area Council, not pack events, so nobody reads them as required. */
+.evt-optional {
+  display: inline-block; font-family: var(--mono); font-size: .7rem; font-weight: 700;
+  letter-spacing: .04em; text-transform: uppercase; white-space: nowrap;
+  color: #00636c; background: var(--sky-050); border: 1.5px solid var(--sky-200);
+  border-radius: 999px; padding: .12rem .6rem; margin: 0 .45rem .2rem 0; vertical-align: middle;
+}
+tr.optional td { color: var(--ink-soft); }
+tr.optional td strong { color: var(--ink); font-weight: 600; }
+.section--pine .evt-optional { background: rgba(234, 250, 251, .12); color: #9fe6ec; border-color: rgba(182, 236, 240, .45); }
+
+/* On phones the tilted flyer poked a few pixels past the screen edge and let the page scroll sideways. */
+@media (max-width: 860px) {
+  .flyer__pin, .flyer__pin:hover { transform: none; }
+}
+
+/* Meeting rundown table: on phones each row stacks into a small card instead of three skinny columns. */
+@media (max-width: 640px) {
+  .rota--stack thead { display: none; }
+  .rota--stack tbody, .rota--stack tr, .rota--stack td { display: block; width: 100%; }
+  .rota--stack tr { padding: .75rem 0 .9rem; border-bottom: 1px solid rgba(11, 28, 20, .12); }
+  .rota--stack tr:last-child { border-bottom: 0; }
+  .rota--stack td { padding: .12rem 0 !important; border: 0 !important; background: transparent !important; }
+  .rota--stack td:first-child { font-family: var(--mono); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--fire-ink); }
+  .rota--stack td:nth-child(2) { font-size: 1.05rem; }
+}
