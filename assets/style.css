@@ -1440,3 +1440,8 @@ tr.optional td strong { color: var(--ink); font-weight: 600; }
   .rota--stack td:first-child { font-family: var(--mono); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--fire-ink); }
   .rota--stack td:nth-child(2) { font-size: 1.05rem; }
 }
+
+/* Worked example table in the popcorn settling up blocks: fits a phone by letting the label wrap. */
+.rota--example { width: 100%; table-layout: fixed; }
+.rota--example td:first-child { white-space: normal; font-variant-numeric: normal; }
+.rota--example td:last-child { width: 6.2rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
